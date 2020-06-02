@@ -9,5 +9,21 @@ active
 {% endblock %}
 
 {% block contenido %}
-¿Por qué mi hasdas
+    <style>
+    .persona{
+        background-color: aquamarine;
+    }
+
+    </style>
+    {% for persona in personas %}
+        <div class="persona">
+            <p> {{ persona }}</p>
+        </div>
+    {% endfor %}
+
+    {% for cosa in cosas %}
+        <div class="cosa">
+            <p> {{ cosa }}</p>
+        </div>
+    {% endfor %}
 {% endblock %}
